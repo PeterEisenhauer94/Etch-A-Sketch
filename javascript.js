@@ -17,8 +17,16 @@ function generateGrid(){
     
 }
 
+function reset(){
+    document.querySelectorAll('.tile').forEach(function(item){
+        item.removeAttribute("style","background-color");
+    })
+}
+
+
 generateGrid();
 
+//make all tiles change color on hover
 document.querySelectorAll('.tile').forEach(function(item){
     item.addEventListener('mouseover', function(){
         item.setAttribute('style','background-color: green');
