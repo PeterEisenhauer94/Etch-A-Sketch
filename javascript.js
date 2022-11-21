@@ -18,3 +18,9 @@ function generateGrid(){
 }
 
 generateGrid();
+
+document.querySelectorAll('.tile').forEach(function(item){
+    item.addEventListener('mouseover', function(){
+        item.setAttribute('style','background-color: green');
+    })
+})
