@@ -10,7 +10,7 @@ function generateGrid(){
         for (let k=1;k<=16;k++){
             let div = document.createElement('div');
             div.setAttribute('id', k);
-            div.textContent = 'A';
+            div.className = 'tile';
             d.appendChild(div);
         }
     }
